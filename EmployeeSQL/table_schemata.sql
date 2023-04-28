@@ -26,7 +26,8 @@ CREATE TABLE departments (
 CREATE TABLE dept_manager (
 	dept_no varchar(5) NOT NULL,
 	emp_no int NOT NULL,
-	FOREIGN KEY (dept_no) REFERENCES departments(dept_no)
+	FOREIGN KEY (dept_no) REFERENCES departments(dept_no),
+	FOREIGN KEY (emp_no) REFERENCES employess(emp_no)
 );
 
 -- Create dept_emp table
